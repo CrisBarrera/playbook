@@ -75,3 +75,12 @@ console.log(explorers_stack)
 console.log("Ejercicio 2.4")
 const explorers_with_js = explorers.filter(explorer => explorer.stack.includes("js"))
 console.log(explorers_with_js)
+
+console.log("Ejercicio 2.5")
+const first_explorer_in_cdmx = explorers.find(explorer => explorer.city === "CDMX")
+console.log(first_explorer_in_cdmx)
+
+console.log("Ejercicio 2.6")
+// La variable acc es el acumulador que necesita la función 
+const all_exercises = explorers.reduce((acc, explorer) => acc + explorer.exercises_completed, 0)
+console.log(all_exercises)
